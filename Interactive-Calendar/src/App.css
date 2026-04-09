@@ -1,0 +1,161 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 1;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Calendar */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day {
+  padding: 12px;
+  text-align: center;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+  background: transparent;
+}
+
+/* Selection */
+.start {
+  background: green;
+  color: white;
+}
+
+.end {
+  background: red;
+  color: white;
+}
+
+.range {
+  background: lightblue;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Light Mode */
+.light {
+  background: white;
+  color: black;
+  min-height: 100vh;
+}
+
+/* Dark Mode */
+.dark {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Calendar boxes */
+.day {
+  padding: 15px;
+  background: #eee;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Dark mode ke liye */
+.dark .day {
+  background: #333;
+}
+
+/* Selection */
+.start {
+  background: green;
+  color: white;
+}
+
+.end {
+  background: red;
+  color: white;
+}
+
+.range {
+  background: lightblue;
+}
+
+/* Button */
+button {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Hero Image */
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Main layout */
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left side (Notes)*/
+.left {
+  width: 30%;
+}
+
+/* Right side (Calendar) */
+.right {
+  width: 67%;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+} 
